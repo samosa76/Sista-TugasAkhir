@@ -90,54 +90,54 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </div>
         <div class="row">
           <div class="col-md-6" style="margin-top: 16px;">
-            <form>
+            <form id="formDaftarPesertaSeminar">
               <fieldset class="border p-2 border-dark">
                 <legend class="w-auto">Form Peserta Seminar</legend>
               <div class="form-group row">
                 <label for="text" class="col-4 col-form-label">NIM</label> 
                 <div class="col-8">
-                  <input id="text" name="text" type="text" class="form-control">
+                  <input id="nim" name="text" type="text" class="form-control">
                 </div>
               </div>
               <div class="form-group row">
                 <label for="text1" class="col-4 col-form-label">Nama</label> 
                 <div class="col-8">
-                  <input id="text1" name="text1" type="text" class="form-control">
+                  <input id="nama" name="text1" type="text" class="form-control">
                 </div>
               </div>
               <div class="form-group row">
-                <label for="select" class="col-4 col-form-label">Select</label> 
+                <label for="select" class="col-4 col-form-label">Prodi</label> 
                 <div class="col-8">
-                  <select id="select" name="select" class="custom-select">
+                  <select id="prodi" name="select" class="custom-select">
                     <option value="si">Sistem Informasi</option>
                     <option value="ti">Teknik Informatika</option>
                   </select>
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-4">Radio Buttons</label> 
+                <label class="col-4">Program</label> 
                 <div class="col-8">
                   <div class="custom-control custom-radio custom-control-inline">
-                    <input name="radio" id="radio_0" type="radio" class="custom-control-input" value="d3"> 
-                    <label for="radio_0" class="custom-control-label">D3</label>
+                    <input name="radio" id="d3" type="radio" class="custom-control-input" value="d3"> 
+                    <label for="d3" class="custom-control-label">D3</label>
                   </div>
                   <div class="custom-control custom-radio custom-control-inline">
-                    <input name="radio" id="radio_1" type="radio" class="custom-control-input" value="s1Reguler"> 
-                    <label for="radio_1" class="custom-control-label">S1 Reguler</label>
+                    <input name="radio" id="s1" type="radio" class="custom-control-input" value="s1Reguler"> 
+                    <label for="s1" class="custom-control-label">S1 Reguler</label>
                   </div>
                   <div class="custom-control custom-radio custom-control-inline">
-                    <input name="radio" id="radio_2" type="radio" class="custom-control-input" value="s1Fast"> 
-                    <label for="radio_2" class="custom-control-label">s1 Fast Trackt</label>
+                    <input name="radio" id="s1FT" type="radio" class="custom-control-input" value="s1Fast"> 
+                    <label for="s1FT" class="custom-control-label">S1 Fast Trackt</label>
                   </div>
                   <div class="custom-control custom-radio custom-control-inline">
-                    <input name="radio" id="radio_3" type="radio" class="custom-control-input" value="s2"> 
-                    <label for="radio_3" class="custom-control-label">S2</label>
+                    <input name="radio" id="s2" type="radio" class="custom-control-input" value="s2"> 
+                    <label for="s2" class="custom-control-label">S2</label>
                   </div>
                 </div>
               </div> 
               <div class="form-group row">
                 <div class="col-8">
-                  <button name="submit" type="submit" class="btn btn-primary">Daftar</button>
+                  <button type="submit" class="btn btn-primary" onclick="daftarPeserta()">Daftar</button>
                 </div>
               </div> 
             </fieldset>
@@ -181,5 +181,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.min.js"></script>
+<script type="text/javascript" src="js/checkEmptyInput.js"></script>
 </body>
 </html>

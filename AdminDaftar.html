@@ -311,58 +311,59 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <h6>Form Daftar Seminar TA</h6>
           <form>
             <div class="form-group row">
-              <label for="text" class="col-4 col-form-label">NIM</label> 
+              <label for="nim" class="col-4 col-form-label">NIM</label> 
               <div class="col-8">
-              <input id="text" name="text" type="text" class="form-control">
+              <input id="nim" name="text" type="text" class="form-control">
               </div>
             </div>
             <div class="form-group row">
-              <label for="text1" class="col-4 col-form-label">Nama</label> 
+              <label for="nama" class="col-4 col-form-label">Nama</label> 
               <div class="col-8">
-              <input id="text1" name="text1" type="text" class="form-control">
+              <input id="nama" name="text1" type="text" class="form-control">
               </div>
             </div>
             <div class="form-group row">
-              <label for="select" class="col-4 col-form-label">Prodi</label> 
+              <label for="prodi" class="col-4 col-form-label">Prodi</label> 
               <div class="col-8">
-              <select id="select" name="select" class="custom-select">
+              <select id="prodi" name="select" class="custom-select">
                 <option value="Teknik Informatika">Teknik Informatika</option>
                 <option value="Sistem Informasi">Sistem Informasi</option>
               </select>
               </div>
             </div> 
             <div class="form-group row">
-              <div class="offset-4 col-8">
+              <label for="tanggal" class="col-4 col-form-label">Tanggal</label>
+              <div class="col-8">
+                <input type="date" id="tanggal" class="form-control">
               </div>
             </div>
-              Tanggal Seminar <input type="date" name="tanggal">
             <div class="form-group row"> <br>
-              <label for="text" class="col-4 col-form-label">Jam Seminar</label> 
+              <label for="jam" class="col-4 col-form-label">Jam Seminar</label> 
               <div class="col-8">
-                <input id="text" name="text" type="text" class="form-control">
+                <input id="jam" name="text" type="text" class="form-control">
               </div>
               </div>
               <div class="form-group row">
-              <label for="text1" class="col-4 col-form-label">Ruangan</label> 
+              <label for="ruangan" class="col-4 col-form-label">Ruangan</label> 
               <div class="col-8">
-                <input id="text1" name="text1" type="text" class="form-control">
+                <input id="ruangan" name="text1" type="text" class="form-control">
               </div>
               </div> 
             </form>
         </td>
         <td>
     
-          <form>
+          <form class="ml-5">
             <div class="form-group row">
-              <label for="textarea" class="col-4 col-form-label">Judul TA</label> 
+              <label for="judulTA" class="col-4 col-form-label">Judul TA</label> 
               <div class="col-8">
-              <textarea id="textarea" name="textarea" cols="40" rows="5" class="form-control"></textarea>
+              <textarea id="judulTA" name="textarea" cols="40" rows="5" class="form-control"></textarea>
               </div>
             </div>
             <div class="form-group row">
-              <label for="select" class="col-4 col-form-label">Seminar</label> 
+              <label for="seminar" class="col-4 col-form-label">Seminar</label> 
               <div class="col-8">
-              <select id="select" name="select" class="custom-select">
+              <select id="seminar" name="select" class="custom-select">
                 <option value="Proposal">Proposal</option>
                 <option value="Seminar Hasil">Seminar Hasil</option>
                 <option value="Seminar Akhir">Seminar Akhir</option>
@@ -370,9 +371,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </div>
             </div>
             <div class="form-group row">
-              <label for="select1" class="col-4 col-form-label">Pembimbing</label> 
+              <label for="pembimbing" class="col-4 col-form-label">Pembimbing</label> 
               <div class="col-8">
-              <select id="select1" name="select1" class="custom-select">
+              <select id="pembimbing" name="select1" class="custom-select">
                 <option value="Sirojul Munir S.SI, M.KOM">Sirojul Munir S.SI, M.KOM</option>
                 <option value="Ahmat Rio M.SI">Ahmat Rio M.SI</option>
                 <option value="Amalia Rahma M.T">Amalia Rahma M.T</option>
@@ -380,9 +381,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </div>
             </div>
             <div class="form-group row">
-              <label for="select2" class="col-4 col-form-label">Penguji 1</label> 
+              <label for="penguji1" class="col-4 col-form-label">Penguji 1</label> 
               <div class="col-8">
-              <select id="select2" name="select2" class="custom-select">
+              <select id="penguji1" name="select2" class="custom-select">
                 <option value="Ahmat Rio M.SI">Ahmat Rio M.SI</option>
                 <option value="Sirojul Munir S.SI, M.KOM">Sirojul Munir S.SI, M.KOM</option>
                 <option value="Amalia Rahma M.T">Amalia Rahma M.T</option>
@@ -390,9 +391,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </div>
             </div>
             <div class="form-group row">
-              <label for="select3" class="col-4 col-form-label">Penguji 2</label> 
+              <label for="penguji2" class="col-4 col-form-label">Penguji 2</label> 
               <div class="col-8">
-              <select id="select3" name="select3" class="custom-select">
+              <select id="penguji2" name="select3" class="custom-select">
                 <option value="Amalia Rahma M.T">Amalia Rahma M.T</option>
                 <option value="Sirojul Munir S.SI, M.KOM">Sirojul Munir S.SI, M.KOM</option>
                 <option value="Ahmat Rio M.SI">Ahmat Rio M.SI</option>
@@ -404,8 +405,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </td>
       </tr>
     </table>
-    <a class="btn btn-primary" href="home.html" role="button"style="margin-left: 18%;" >Update</a>
-    <a class="btn btn-primary" href="home.html" role="button" style="margin-left: 18%;">Hapus</a>
+    <a class="btn btn-primary" role="button"style="margin-left: 18%;" onclick="update()">Update</a>
+    <a class="btn btn-primary ml-2" role="button" onclick="hapus()">Hapus</a>
   </div>
     <!-- /.content -->
   </div>
