@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daftar Peserta Seminar</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition layout-top-nav">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-center"></h1>
+          </div><!-- /.col -->
+          
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="text-center">
+              Sistem Informasi Seminar Tugas Akhir -SISTA
+            </h3>
+            <nav>
+              <ol class="breadcrumb" >
+                <li class="breadcrumb-item ml-auto">
+                  <a href="#">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#">Jadwal</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#">Detail Jadwal</a>
+                </li>
+                <li class="breadcrumb-item active">
+                  Daftar Peserta
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Mahasiswa Seminar</td>
+                  <td>: Diego</td>
+                </tr>
+                <tr>
+                  <td>Judul</td>
+                  <td>: Rancangan Bangunan Aplikasi Seminar Tugas Akhir Berbasis Web Menggunakan MVC Framework</td>
+                </tr>
+                <tr>
+                  <td>Waktu</td>
+                  <td>: Senin, 4 Januari 2021, 10:00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6" style="margin-top: 16px;">
+            <form>
+              <fieldset class="border p-2 border-dark">
+                <legend class="w-auto">Form Peserta Seminar</legend>
+              <div class="form-group row">
+                <label for="text" class="col-4 col-form-label">NIM</label> 
+                <div class="col-8">
+                  <input id="text" name="text" type="text" class="form-control">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="text1" class="col-4 col-form-label">Nama</label> 
+                <div class="col-8">
+                  <input id="text1" name="text1" type="text" class="form-control">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="select" class="col-4 col-form-label">Select</label> 
+                <div class="col-8">
+                  <select id="select" name="select" class="custom-select">
+                    <option value="si">Sistem Informasi</option>
+                    <option value="ti">Teknik Informatika</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-4">Radio Buttons</label> 
+                <div class="col-8">
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio" id="radio_0" type="radio" class="custom-control-input" value="d3"> 
+                    <label for="radio_0" class="custom-control-label">D3</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio" id="radio_1" type="radio" class="custom-control-input" value="s1Reguler"> 
+                    <label for="radio_1" class="custom-control-label">S1 Reguler</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio" id="radio_2" type="radio" class="custom-control-input" value="s1Fast"> 
+                    <label for="radio_2" class="custom-control-label">s1 Fast Trackt</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio" id="radio_3" type="radio" class="custom-control-input" value="s2"> 
+                    <label for="radio_3" class="custom-control-label">S2</label>
+                  </div>
+                </div>
+              </div> 
+              <div class="form-group row">
+                <div class="col-8">
+                  <button name="submit" type="submit" class="btn btn-primary">Daftar</button>
+                </div>
+              </div> 
+            </fieldset>
+            </form>
+          </div>
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+    <div class="p-3">
+      <h5>Title</h5>
+      <p>Sidebar content</p>
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+      Anything you want
+    </div>
+    <!-- Default to the left -->
+    
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+</body>
+</html>
